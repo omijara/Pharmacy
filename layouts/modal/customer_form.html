@@ -1,0 +1,44 @@
+<div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Customer Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                              <form class="form-row" id="register_form" action="form_insert.php" method="post">
+                    <input type="hidden" name="id" value="">
+
+                    <div class="form-group col-md-6">
+                        <label for="name">গ্রাহকের নাম<span class="text-danger">*</span></label>
+                        <input type=text value="" placeholder="Enter Customer name" id="name" class="form-control " name="name" min="0" max="" required>
+                        <small class="help-text text-muted">অনুগ্রহ করে গ্রাহকের নাম লিখুন.</small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="name">মোবাইল নম্বর<span class="text-danger">*</span></label>
+                        <input type=text value="" placeholder="" id="name" class="form-control " name="mobile" min="0" max="" required>
+                        <small class="help-text text-muted">গ্রাহকের মোবাইল লিখুন</small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="name">ঠিকানা<span class="text-danger">*</span></label>
+                        <textarea type=text value="" placeholder="" id="name" class="form-control " name="address" rows="1" required></textarea>
+                        <small class="help-text text-muted">অনুগ্রহ করে গ্রাহকের ঠিকানা লিখুন</small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="name">বাকির পরিমান<span class="text-danger"></span></label>
+                        <input type=text value="" placeholder="Optional" id="name" class="form-control " name="dues">
+                        <small class="help-text text-muted">বাকির পরিমাণ লিখুন</small>
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="float-right">
+                            <button type="submit" name="new_save_data" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Save</button>
+                           <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </form>
+          
+            </div>
