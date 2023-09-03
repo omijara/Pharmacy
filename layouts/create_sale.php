@@ -8,7 +8,7 @@ $customers = $obj->show_customer_data();
 $products = $obj->show_product_sales();
 
 ?>
-<script src="script/sales.js"></script>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -138,9 +138,10 @@ $products = $obj->show_product_sales();
       </div>
 
       <div class="col col-md-2">
-        <button class="btn btn-primary" id="addButton" onclick="addRow();">
-          <i class="fa fa-plus"></i>
-        </button>
+      <button class="btn btn-primary addButton" onclick="addRow();">
+        <i class="fa fa-plus"></i>
+      </button>
+
         <button class="btn btn-danger" onclick="removeRow('<?php echo $row_id ?>');">
           <i class="fa fa-trash"></i>
         </button>
@@ -219,7 +220,7 @@ $products = $obj->show_product_sales();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <!-- Include your separate JavaScript file -->
 <script src="script/sales_script.js"></script>
-
+<script src="script/sales.js"></script>
 <script>
        $('.customer_mobile').select2({
             placeholder: "Select customer",
